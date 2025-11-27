@@ -1,27 +1,25 @@
-# Week 6 - Strings and Classes
+# Week 6 - Pointers and Binary Search
 
-For this week, I created a C++ program that uses a class and file I/O.
+For this week, I completed the Module 7 exercise.  
+The goal was to use a struct, dynamic memory, and binary search.
 
-I made a class called Item. It has:
-- a string for the item name
-- an int for the quantity
+I created a struct called Item that has:
+- a string name
+- an int id
 
-The class includes two functions:
-- saveToFile() → saves the item data into a file called items.txt
-- loadFromFile() → reads the data from the file and prints it
+The program:
+- creates a dynamic array of 100 items using `new`
+- fills the array with sorted IDs from 1 to 100
+- asks the user to enter an ID
+- uses binary search to find the item in the array
+- prints the name and ID if found
+- frees the memory using delete[]
 
-In the main function:
-- I created an Item object
-- I set the name to "Screwdriver" and the quantity to 10
-- I saved the data to the file
-- Then I loaded the file and showed the content
+How to compile:
+g++ week6.cpp -o week6
 
-How to compile and run:
-1. Compile:
-   g++ week6.cpp -o week6
-2. Run:
-   ./week6
+How to run:
+./week6
 
-Files included this week:
+Files included:
 - week6.cpp
-- items.txt (this file is created automatically when the program runs)
