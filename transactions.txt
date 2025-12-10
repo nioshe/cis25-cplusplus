@@ -1,0 +1,4 @@
+Deposit: $100.00
+Purchase - Coffee: $4.50
+Purchase - Book: $25.00
+Purchase - Lunch: $12.75
